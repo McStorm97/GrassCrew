@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Booking</title>
+    <link href="theme.css" rel="stylesheet">
 </head>
 <body>
 <a href="Home.html"><h1>Nav Bar</h1></a>
@@ -13,16 +14,16 @@
     Please enter your details below and pick an available date.
 </p>
 <form>
-    <table>
+    <table class="tableform">
         <tr>
             <td><label for="fnameID">First Name</label></td>
-            <td><input type="text" id="fnameID" name="firstname"></td>
-            <td><label for="lnameID">Last Name</label></td>
+            <td style="width:15%"><input type="text" id="fnameID" name="firstname"></td>
+            <td style = "width:12%"><label for="lnameID">Last Name</label></td>
             <td><input type="text" id="lnameID" name="lastname"></td>
         </tr>
         <tr>
-            <td><label for="sAddressID">Street Address</label></td>
-            <td colspan="3"><input type="text" id="sAddressID" name="streetaddress" size="56"></td>
+            <td style="width:15%"><label for="sAddressID">Street Address</label></td>
+            <td colspan="3"><input type="text" id="sAddressID" name="streetaddress" size="79"></td>
         </tr>
         <tr>
             <td><label for="cityID">City</label></td>
@@ -38,7 +39,7 @@
         </tr>
         <tr>
             <td></td>
-            <td><input type="reset" value="Reset Form"></td>
+            <td style="text-align:right"><input type="reset" value="Reset Form"></td>
             <td><input type="submit" value="Submit"></td>
             <td></td>
         </tr>
