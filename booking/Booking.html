@@ -6,58 +6,53 @@
     <link href="Booking.css" rel="stylesheet">
 </head>
 <body>
+<div class="padtop"></div>
 <div class="rowh">
     <div class="column1h">
-            <span class="dropdown">
-                <button class="dropbtn">MENU</button>
-                <div class="dropdown-content">
-                    <a href="../Home/Home.html">Home</a>
-                    <a href="../Details/Details.html">Details</a>
-                    <a href="../About/About.html">About us </a>
-                </div>
-            </span>
+        <img src="../Images/logo2.png" width="100%">
     </div>
     <div class="column2h">
-            <span href="Home.html"><img src="../Images/logo2.png"
-                                        width="100%"
-                                        hight="100%">
-            </span>
+        <div class="dropdown">
+            <button class="dropbtn">MENU</button>
+            <div class="dropdown-content">
+                <a href="../Home/Home.html">Home</a>
+                <a href="../booking/Booking.html">Booking</a>
+                <a href="../Details/Details.html">Details</a>
+                <a href="../About/About.html">About Us</a>
+            </div>
+        </div>
     </div>
 </div>
-<p>
-    Here you can book in with us automatically to get a quote for your yard. As every yard is different and we offer many services, one of our friendly team will need to pop around and have a look to give an accurate price.
-</p>
-<p>
-    Please enter your details below and pick an available date.
-</p>
-<form>
-    <table class="tableform">
-        <tr>
-            <td><label for="fnameID">First Name</label></td>
-            <td style="width:15%"><input type="text" id="fnameID" name="firstname"></td>
-            <td style = "width:12%"><label for="lnameID">Last Name</label></td>
-            <td><input type="text" id="lnameID" name="lastname"></td>
-        </tr>
-        <tr>
-            <td style="width:15%"><label for="sAddressID">Street Address</label></td>
-            <td colspan="3"><input type="text" id="sAddressID" name="streetaddress" size="79"></td>
-        </tr>
-        <tr>
-            <td><label for="cityID">City</label></td>
-            <td><input type="text" id="cityID" name="city"></td>
-            <td><label for="regionID">Region</label></td>
-            <td><input type="text" id="regionID" name="region"></td>
-        </tr>
-        <tr>
-            <td><label for="phoneID">Phone</label></td>
-            <td><input type="tel" id="phoneID" name="phone"></td>
-            <td><label for="emailID">Email</label></td>
-            <td><input type="email" id="emailID" name="email"></td>
-        </tr>
-        <tr>
-            <td colspan="2"><label for="serviceID">What service are you interested in?</label></td>
-            <td>
-                <select id="serviceID" name="service">
+<div class="pad"></div>
+<div class="title">
+    <p>
+        Here you can book in with us automatically to get a quote for your yard. As every yard is different and we offer many services, one of our friendly team will need to pop around and have a look to give an accurate price.
+    </p>
+</div>
+<div class="pad"></div>
+<div class="information">
+    <p style="text-align: center">
+        Please enter your details below and pick an available date.
+    </p>
+    <form>
+        <div class="form">
+            <div><label for="fnameID">First Name</label></div>
+            <div><input style="width:100%" type="text" id="fnameID" name="firstname"></div>
+            <div><label for="lnameID">Last Name</label></div>
+            <div><input style="width:100%" type="text" id="lnameID" name="lastname"></div>
+            <div><label for="sAddressID">Street Address</label></div>
+            <div><input style="width:100%" type="text" id="sAddressID" name="streetaddress"></div>
+            <div><label for="cityID">City</label></div>
+            <div><input style="width:100%" type="text" id="cityID" name="city"></div>
+            <div><label for="regionID">Region</label></div>
+            <div><input style="width:100%" type="text" id="regionID" name="region"></div>
+            <div><label for="phoneID">Phone</label></div>
+            <div><input style="width:100%" type="tel" id="phoneID" name="phone"></div>
+            <div><label for="emailID">Email</label></div>
+            <div><input style="width:100%" type="email" id="emailID" name="email"></div>
+            <div><label for="serviceID">What service are you interested in?</label></div>
+            <div>
+                <select style="width:100%" id="serviceID" name="service">
                     <option value="lawnmow" selected>Lawn Mowing</option>
                     <option value="edging">Edge and line trimming</option>
                     <option value="brooming">Brooming raking and tidying</option>
@@ -65,29 +60,20 @@
                     <option value="largetree">Large Tree trimming or removal</option>
                     <option value="organic">Organic Disposal</option>
                 </select>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="4" style="text-align:center"><h1>Calendar to go in here</h1></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td style="text-align:right"><input type="reset" value="Reset Form"></td>
-            <td><input type="submit" value="Submit"></td>
-            <td></td>
-        </tr>
-    </table>
-</form>
-
+            </div>
+            <div><label for="dateID">What date would you like to book us?</label></div>
+            <div><input style="width:100%" type="datetime-local" id="dateID" name="date"></div>
+            <div style="text-align: right; padding-right: 10px;"><input style="width:50%" type="reset" value="Reset Form"></div>
+            <div><input style="width:50%" type="submit" value="Submit"></div>
+        </div>
+    </form>
+</div>
+<div class="pad"></div>
 </body>
 <footer>
     <div class="footer">
-        <p>LawnCrew offer lawn care and gardening services. While we do our best to offer our services to everyone, we must ensure the health and safety of our employees. Quotes are a cost estimate and do not guarantee the final charges incurred for work carried out. We will ensure that all data is stored securely in accordance with New Zealand legislation. Any breach will promptly be reported to any affected party as well as relevant authorities.
-        </p>
-        <p>
-            Copyright © 2022, all rights reserved TM LawnCrew
-
-        </p>
+        <p>GrassCrew offer lawn care and gardening services. While we do our best to offer our services to everyone, we must ensure the health and safety of our employees. Quotes are a cost estimate and do not guarantee the final charges incurred for work carried out. We will ensure that all data is stored securely in accordance with New Zealand legislation. Any breach will promptly be reported to any affected party as well as relevant authorities.</p>
+        <p>Copyright © 2022, all rights reserved TM GrassCrew</p>
     </div>
 </footer>
 </html>
