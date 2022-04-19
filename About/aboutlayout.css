@@ -133,13 +133,12 @@ body {
 .dropbtn {
     background-color: #04AA6D;
     color: white;
-    width: 200px;
-    font-size: 40px;
+    width: 100px;
     border: none;
     border-radius:20px;
     margin-top: 10px;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .dropdown {
     position: relative;
