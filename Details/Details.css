@@ -75,16 +75,13 @@ body {
 .dropbtn {
     background-color: #04AA6D;
     color: white;
-    width: 200px;
+    width: 70px;
+    height: 70px;
     font-size: 40px;
     border: none;
-    border-radius:20px;
+    border-radius: 20px;
     margin-top: 10px;
-    padding-top: 60px;
-    padding-bottom: 60px;
 }
-
-
 .dropdown {
     position: relative;
     display: inline-block;
