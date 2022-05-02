@@ -24,12 +24,7 @@ body {
 .padtop {
     padding: 5px;
 }
-.slideshow {
-    text-align: center;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-}
+
 .bottom {
     margin-left: 10%;
     margin-right: 10%;
@@ -60,60 +55,8 @@ body {
     text-align: right;
 }
 
-.dropbtn {
-    background-color: #04AA6D;
-    color: white;
-    width: 70px;
-    height: 70px;
-    font-size: 40px;
-    border: none;
-    border-radius: 20px;
-    margin-top: 10px;
-}
 
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {background-color: #ddd;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
-
-.footer{
-    border-radius: 10px;
-    border: 2px solid black;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    background-color: #e5f6df;
-    font-size: x-small;
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
-}
 * {box-sizing:border-box}
 .slideshow-container {
     max-width: 1000px;
