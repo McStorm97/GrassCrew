@@ -32,31 +32,6 @@ body {
     text-align: center;
 }
 
-.rowh {
-    display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
-    background-color: #e5f6df;
-    border-radius: 20px;
-    border: 2px solid black;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.column1h {
-    flex: 80%;
-    padding: 5px;
-}
-.column2h {
-    flex: 20%;
-    padding: 5px;
-    text-align: right;
-}
-
-
-
 * {box-sizing:border-box}
 .slideshow-container {
     max-width: 1000px;
