@@ -5,6 +5,7 @@
     <title>Booking</title>
     <link href="Booking.css" rel="stylesheet">
     <link rel="stylesheet" href="../HeaderFooter/Header.css">
+    <script src="bookingform.js"></script>
 
 
 </head>
@@ -51,7 +52,7 @@
             <div><label for="dateID">What date would you like to book us?</label></div>
             <div><input style="width:100%" type="datetime-local" id="dateID" name="date"></div>
             <div style="text-align: right; padding-right: 10px;"><input style="width:50%" type="reset" value="Reset Form"></div>
-            <div><input style="width:50%" type="submit" value="Submit"></div>
+            <div><input style="width:50%" type="submit" value="Submit" onclick="emailCheck(); dateCheck();"></div>
         </div>
     </form>
 </div>
