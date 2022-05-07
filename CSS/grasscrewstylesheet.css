@@ -1,0 +1,304 @@
+/*General CSS styling across all pages*/
+html {
+    font-family: Verdana, serif;
+    font-size: 18px;
+
+}
+body {
+    background-image: url("../Images/background3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.pad {
+    padding: 5px;
+}
+.padtop {
+    padding: 5px;
+}
+.title {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    background-color: #e5f6df;
+    border-radius: 20px;
+    border: 2px solid black;
+    font-size: 26px;
+    padding: 5px;
+}
+.fleximage {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+/*Header CSS styling*/
+/*Header containers*/
+.rowh {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #e5f6df;
+    border-radius: 20px;
+    border: 2px solid black;
+    padding-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.column1h {
+    flex: 80%;
+    padding: 5px;
+    align-self: center;
+    margin-left: 30px;
+}
+.column2h {
+    flex: 20%;
+    padding: 5px;
+    text-align: right;
+}
+/*Code for navigation drop down*/
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    width: 120px;
+    height: 120px;
+    font-size: 40px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-right: 30px;
+    align-self: center;
+
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+/*Home page styling*/
+/*Slideshow CSS*/
+* {box-sizing:border-box}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.mySlides {
+    display: none;
+    width:1000px;
+    height:400px;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+/*Booking Page CSS styling*/
+.bookinginformation {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #e5f6df;
+    border-radius: 20px;
+    border: 2px solid black;
+    padding: 5px;
+}
+.form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left:10%;
+    margin-right: 10%;
+    padding: 5px;
+}
+.captcha {
+    margin-right: 1000px;
+}
+/*Details CSS styling*/
+.details {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #e5f6df;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.dleftside {
+    flex: 35%;
+}
+.drightside {
+    flex: 65%;
+    padding-left: 20px;
+}
+
+/*About us CSS styling*/
+.aboutlayout {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.acolumnleft {
+    flex: 40%;
+    padding: 10px;
+}
+.acolumnright {
+    flex: 60%;
+    padding: 10px;
+}
+.padacolumnleft{
+    grid-column: 1 / 3;
+    padding: 13px;
+}
+.acolumnleftgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.title2 {
+    grid-column: 1 / 3;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.title3 {
+    grid-column: 1 / 3;
+    text-align: center;
+    background-color: #e5f6df;
+    border-radius: 20px;
+    border: 2px solid black;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 5px;
+}
+.crewcontainer {
+    background-color: #e5f6df;
+    border-radius: 20px;
+    border: 2px solid black;
+    display: flex;
+    grid-column: 1 / 3;
+}
+.crewimage{
+    width: 50%;
+    padding-left:5px;
+    padding-top: 5px;
+}
+.crewinfo {
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.contactcont {
+    background-color: #e5f6df;
+    border-radius: 20px;
+    border: 2px solid black;
+    grid-column: 1 / 3;
+}
+.contactinfo {
+    display: flex;
+    grid-column: 1 / 3;
+}
+/*Image over text CSS for gallery*/
+.gallerycont {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.galleryimage {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+.imagetext {
+    border-radius: 20px;
+    position: absolute;
+    bottom: 5px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    text-align: center;
+}
+/*Footer CSS styling*/
+.footer{
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 3px 20px;
+    background-color: #e5f6df;
+    font-size: x-small;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
