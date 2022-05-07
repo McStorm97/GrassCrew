@@ -10,10 +10,10 @@ document.write(
     '<button class="dropbtn">' +
     '<img src="../Images/burgerbun%20menu.png" width="70" height="70"></button>' +
     '<div class="dropdown-content">' +
-    '<a href="../Home/Home.html">Home</a>' +
-    '<a href="../booking/Booking.html">Booking</a>' +
-    '<a href="../Details/Details.html">Details</a>' +
-    '<a href="../About/About.html">About Us</a>' +
+    '<a href="../HTML/Home.html">Home</a>' +
+    '<a href="../HTML/Booking.html">Booking</a>' +
+    '<a href="../HTML/Details.html">Details</a>' +
+    '<a href="../HTML/About.html">About Us</a>' +
     '</div>' +
     '</div>' +
     '</div>' +

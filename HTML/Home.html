@@ -3,64 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
-    <link href="home.css" rel="stylesheet">
-    <link rel="stylesheet" href="../HeaderFooter/Header.css">
-
-
-
+    <!--applies the stylesheet to the page-->
+    <link href="../css/grasscrewstylesheet.css" rel="stylesheet">
 </head>
 <body>
-<script src="Home.js"></script>
-<script src="../HeaderFooter/Header.js"></script>
+<!--Calling the javascript for the slideshow-->
+<script src="../Javascript/Home.js"></script>
+<!--Calling the javascript for the header-->
+<script src="../Javascript/Header.js"></script>
+<div class="pad"></div>
+<!--Introduction-->
 <div class="title">
     Grass Crew have been in business since 2003. Starting out as just a basic lawn mowing one man band, we have since expanded our crew and expanded our services. Look to us as a one stop yard maintenance shop!
 </div>
 <div class="pad"></div>
-
+<!--HTML for the slideshow-->
 <div class="slideshow">
-
     <div class="slideshow-container" >
-
         <div class="mySlides fade" style="display: block;">
             <div class="numbertext" >1 / 6</div>
-            <img src="Slideshow/fresh-cut-grass-and-mower.jpg" style="width:1000px;height:400px;">
-
+            <img src="../Images/Slideshow/fresh-cut-grass-and-mower.jpg" style="width:1000px;height:400px;">
         </div>
-
         <div class="mySlides fade">
             <div class="numbertext">2 / 6</div>
-            <img src="Slideshow/gabriel-mccallin-WVR8Noo6DDI-unsplash.jpg" style="width:1000px;height:400px">
-
+            <img src="../Images/Slideshow/gabriel-mccallin-WVR8Noo6DDI-unsplash.jpg" style="width:1000px;height:400px">
         </div>
-
         <div class="mySlides fade">
             <div class="numbertext">3 / 6</div>
-            <img src="Slideshow/kouji-tsuru-hkilGmT85ss-unsplash.jpg" style="width:1000px;height:400px">
-
+            <img src="../Images/Slideshow/kouji-tsuru-hkilGmT85ss-unsplash.jpg" style="width:1000px;height:400px">
         </div>
-
         <div class="mySlides fade">
             <div class="numbertext">4 / 6</div>
-            <img src="Slideshow/ryan-nicoll-Su0SedcyOkQ-unsplash.jpg" style="width:1000px;height:400px">
-
+            <img src="../Images/Slideshow/ryan-nicoll-Su0SedcyOkQ-unsplash.jpg" style="width:1000px;height:400px">
         </div>
-
         <div class="mySlides fade">
             <div class="numbertext">5 / 6</div>
-            <img src="Slideshow/sonny-smith-3wtwEERSx2I-unsplash.jpg" style="width:1000px;height:400px">
-
+            <img src="../Images/Slideshow/sonny-smith-3wtwEERSx2I-unsplash.jpg" style="width:1000px;height:400px">
         </div>
-
         <div class="mySlides fade">
             <div class="numbertext">6 / 6</div>
-            <img src="Slideshow/stockvault-lawn-mower166733.jpg" style="width:1000px;height:400px">
-
+            <img src="../Images/Slideshow/stockvault-lawn-mower166733.jpg" style="width:1000px;height:400px">
         </div>
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <br>
-
     <div style="text-align:center">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
@@ -68,12 +55,9 @@
         <span class="dot" onclick="currentSlide(4)"></span>
         <span class="dot" onclick="currentSlide(5)"></span>
         <span class="dot" onclick="currentSlide(6)"></span>
-
     </div>
-
 </div>
-
-
 </body>
-<script src="../HeaderFooter/Footer.js"></script>
+<!--Calling the javascript for the footer-->
+<script src="../Javascript/Footer.js"></script>
 </html>

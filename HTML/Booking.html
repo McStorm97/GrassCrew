@@ -3,27 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Booking</title>
-    <link href="Booking.css" rel="stylesheet">
-    <link rel="stylesheet" href="../HeaderFooter/Header.css">
-    <script src="bookingform.js"></script>
-
-
+    <!--applies the stylesheet to the page-->
+    <link href="../CSS/grasscrewstylesheet.css" rel="stylesheet">
+    <!--Calling the javascript for the form validation-->
+    <script src="../Javascript/bookingform.js"></script>
 </head>
 <body>
-<script src="../HeaderFooter/Header.js"></script>
+<!--Calling the javascript for the header-->
+<script src="../Javascript/Header.js"></script>
 <div class="pad"></div>
+<!--Page introduction-->
 <div class="title">
-    <p>
         Here you can book in with us automatically to get a quote for your yard. As every yard is different and we offer many services, one of our friendly team will need to pop around and have a look to give an accurate price.
-    </p>
 </div>
 <div class="pad"></div>
-<div class="information">
+<!--Setting container for the form to go in-->
+<div class="bookinginformation">
     <p style="text-align: center">
         Please enter your details below and pick an available date. All fields are required.
     </p>
+    <!--Form-->
     <form>
         <div class="form">
+            <!--HTML validation in most fields using the types and the 'required' tag-->
             <div><label for="fnameID">First Name</label></div>
             <div><input style="width:100%" type="text" id="fnameID" name="firstname" required></div>
             <div><label for="lnameID">Last Name</label></div>
@@ -36,6 +38,7 @@
             <div><input style="width:100%" type="text" id="regionID" name="region" required></div>
             <div><label for="phoneID">Phone</label></div>
             <div><input style="width:100%" type="tel" id="phoneID" name="phone" required></div>
+            <!--Javascript validation on the email-->
             <div><label for="emailID">Email</label></div>
             <div><input style="width:100%" type="email" id="emailID" name="email"></div>
             <div><label for="serviceID">What service are you interested in?</label></div>
@@ -49,19 +52,26 @@
                     <option value="organic">Organic Disposal</option>
                 </select>
             </div>
+            <!--datetime-local gives us a dropdown calendar and time and javascript validates the date to make sure it is after todays date-->
             <div><label for="dateID">What date would you like to book us?</label></div>
             <div><input style="width:100%" type="datetime-local" id="dateID" name="date"></div>
-            <div><label for="capID" for="capID1" >Solve to submit: <input style="width:10%" type="number" id="capID" name="captcha" required>*
-                <input style="width:10%" type="number" id="capID1" name="captcha" required>=25</label> </div>
-            <div></div>
-
-
+            <!--Created our own captcha to do a calculation and validate for javascript to fulfill requirements of assessment-->
+            <div><label for="capID1" >Solve to submit</label></div>
+            <div>
+                <input style="width:10%" type="number" id="capID" name="captcha" required> x
+                <input style="width:10%" type="number" id="capID1" name="captcha" required>=25
+            </div>
+            <!--Checkbox required to be checked to proceed-->
+            <div><label for="robotID">I am not a robot</label></div>
+            <div><input type="checkbox" id="robotID" name="robot" required></div>
             <div style="text-align: right; padding-right: 10px;"><input style="width:50%" type="reset" value="Reset Form"></div>
+            <!--clicking submit calls functions to check the email, check the date and check the captcha and validate-->
             <div><input style="width:50%" type="submit" value="Submit" onclick="emailCheck(); dateCheck(); capcheck();"></div>
         </div>
     </form>
 </div>
 <div class="pad"></div>
 </body>
-<script src="../HeaderFooter/Footer.js"></script>
+<!--Calling the javascript for the footer-->
+<script src="../Javascript/Footer.js"></script>
 </html>
