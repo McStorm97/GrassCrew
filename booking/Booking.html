@@ -51,8 +51,13 @@
             </div>
             <div><label for="dateID">What date would you like to book us?</label></div>
             <div><input style="width:100%" type="datetime-local" id="dateID" name="date"></div>
+            <div><label for="capID" for="capID1" >Solve to submit: <input style="width:10%" type="number" id="capID" name="captcha" required>*
+                <input style="width:10%" type="number" id="capID1" name="captcha" required>=25</label> </div>
+            <div></div>
+
+
             <div style="text-align: right; padding-right: 10px;"><input style="width:50%" type="reset" value="Reset Form"></div>
-            <div><input style="width:50%" type="submit" value="Submit" onclick="emailCheck(); dateCheck();"></div>
+            <div><input style="width:50%" type="submit" value="Submit" onclick="emailCheck(); dateCheck(); capcheck();"></div>
         </div>
     </form>
 </div>

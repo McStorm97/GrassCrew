@@ -31,3 +31,18 @@ function dateCheck() {
         return false;
     }
 }
+function capcheck() {
+    var cap1 = document.getElementById("capID").value;
+    var cap2 = document.getElementById("capID1").value;
+    if (cap1 === "" || cap1 === null || cap2 === "" || cap2 === null) {
+        alert("Please solve to submit");
+        return false;
+    }
+    let cap = cap1 * cap2;
+    //get current date from system
+
+    if (cap !== 25) {
+        alert("Incorrect, try again");
+        return false;
+    }
+}

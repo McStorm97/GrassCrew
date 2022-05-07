@@ -41,6 +41,8 @@ body {
 
 .mySlides {
     display: none;
+    width:1000px;
+    height:400px;
 }
 
 .prev, .next {
