@@ -1,10 +1,22 @@
-
+function submitter() {
+    if (emailCheck() === false)
+        return false;
+    if (dateCheck() === false)
+        return false;
+    if (capcheck() === false) {
+        return false;
+    } else {
+        return true;
+    }
+}
 function emailCheck() {
     var email = document.getElementById("emailID").value;
     var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     if (!email.match(mailformat)) {
         alert("Must enter a valid email address");
         return false;
+    } else {
+        return true;
     }
 }
 function dateCheck() {
@@ -29,9 +41,9 @@ function dateCheck() {
     if (date <= today) {
         alert("Date must be after today");
         return false;
+    } else {
+        return true;
     }
-
-
 }
 function capcheck() {
     var cap1 = document.getElementById("capID").value;
@@ -41,10 +53,11 @@ function capcheck() {
         return false;
     }
     let cap = cap1 * cap2;
-    //get current date from system
 
     if (cap !== 25) {
         alert("Incorrect, try again");
         return false;
+    } else {
+        return true;
     }
 }

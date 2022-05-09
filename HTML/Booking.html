@@ -67,12 +67,14 @@
             <div><input type="checkbox" id="robotID" name="robot" required></div>
             <div style="text-align: right; padding-right: 10px;"><input style="width:50%" type="reset" value="Reset Form"></div>
             <!--clicking submit calls functions to check the email, check the date and check the captcha and validate-->
-            <div><input style="width:50%" type="submit" value="Submit" onclick="emailCheck(); dateCheck(); capcheck();"></div>
+            <div><input style="width:50%" type="submit" value="Submit" onclick="return submitter();"></div>
         </div>
     </form>
 </div>
 <div class="pad"></div>
+<footer>
+    <!--Calling the javascript for the footer-->
+    <script src="../Javascript/Footer.js"></script>
+</footer>
 </body>
-<!--Calling the javascript for the footer-->
-<script src="../Javascript/Footer.js"></script>
 </html>
