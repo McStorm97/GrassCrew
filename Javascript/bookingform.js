@@ -30,6 +30,8 @@ function dateCheck() {
         alert("Date must be after today");
         return false;
     }
+
+
 }
 function capcheck() {
     var cap1 = document.getElementById("capID").value;
