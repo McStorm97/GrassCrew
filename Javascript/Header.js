@@ -1,5 +1,5 @@
 document.write(
-    '<head>  '  +
+    '<link rel="icon" href="/Images/logo2.png">' +
     '<div class="pad">' +
     '<div class="rowh">' +
     '<div class="column1h">' +
@@ -18,5 +18,5 @@ document.write(
     '</div>' +
     '</div>' +
     '</div>' +
-    '</div>' +
-    '</head>')
+    '</div>'
+    )
