@@ -1,5 +1,5 @@
 document.write(
-    '<link rel="icon" href="/Images/logo2.png">' +
+    '<link rel="icon" href="../Images/icon.png">' +
     '<div class="pad">' +
     '<div class="rowh">' +
     '<div class="column1h">' +
