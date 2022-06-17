@@ -1,1 +1,3 @@
-<?php include_once("home.html"); ?>
+<?
+$location = "HTML/Home.html";
+include($location);
